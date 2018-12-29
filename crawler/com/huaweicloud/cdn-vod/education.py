@@ -43,25 +43,47 @@ def join(fromdir, tofile):
  第三天，机器学习中的分类问题上
  https://13.cdn-vod.huaweicloud.com/asset/ca4a51e7516dbae5d31309f46420853e/play_video/51c9ed149ee3a3666a36ed5b2bd4a980_1_854X480_600_0_{k}.ts
  {k} = 0 - 171
- 第三天，机器学习中的分类问题下
+ 第四天，机器学习中的分类问题下
  https://13.cdn-vod.huaweicloud.com/asset/adb219c91ca6a59a4da2221ef3f6ed9e/play_video/199f46367c0f4f95339c586a9f5b438b_1_854X480_600_0_{k}.ts
  {k} = 0 - 206
- 学习地址
- https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXE018+Self-paced/courseware/b4b7d7688d574f358afa815aeedc712c/e2c7964ca6fe42518ea402c42d2502d5/
+ 第五天，机器学习中的回归问题上
+ https://13.cdn-vod.huaweicloud.com/asset/7df34dc82b0825b9f8b883d9d642f971/play_video/3c7037eea0ded7d25714756930811ac5_1_1920X1078_0_0_{k}.ts
+ {k} = 0 - 206
+ 第六天，机器学习中的回归问题下
+ https://13.cdn-vod.huaweicloud.com/asset/441940dc2771100d4b91a0a555a3991e/play_video/dcf3bcc5ddbc26b44de6cf52e401150c_1_1920X1078_0_0_{k}.ts
+ {k} = 0 - 107
+ 第七天，
+ 
+ 云享V课堂
+ 第一讲-TensorFlow Estimator实战分享-云视界live 12.05 周三 20:00-21:00
+ http://vod.mudu.tv/watch/2018-12-05/4axrf4/{k}.ts
+ {k} = 48 - 142
+ 第二讲-实战派带你上车，0门槛体验AI超能力-12.19 19:00-20:00
+ http://cdn12.mudu.tv/uploads/85181/640_480/9ca578485113d326f5d3dc85bc4f8bd6-{k}.ts
+ {k} = 00001 - 00530
+ 第三讲-刷脸时代已经到来，快速构建专属人脸库-2018.12.27 19:00-20:00
+ http://cdn12.mudu.tv/uploads/85181/640_480/ffcb254930d584453651390db32810ba-{k}.ts
+ {k} = 00001 - 00343
  '''    
 if __name__ == '__main__':
    
     # 初始化
-    url = 'https://13.cdn-vod.huaweicloud.com/asset/adb219c91ca6a59a4da2221ef3f6ed9e/play_video/199f46367c0f4f95339c586a9f5b438b_1_854X480_600_0_'
+    url = ''
     folder = './folder/'
     dict_of_lists = {}
     
-    # 创建0.ts - 111.ts文件名
+    # 创建0.ts - 500.ts文件名
     current = 0
-    while current <= 300:
+    while current <= 10000:
         name=str(current)+'.ts'
         dict_of_lists[name] = url+name
         current += 1
+
+    # 创建00000.ts - 99999.ts文件名
+    # while current <= 600:
+    #     name=str(current).zfill(5)+'.ts'
+    #     dict_of_lists[name] = url+name
+    #     current += 1
 
     # test folder is exist
     if not os.path.exists(folder):
@@ -74,13 +96,13 @@ if __name__ == '__main__':
         if r.status_code is 200:
             with open(folder + link, "wb") as source:
                 source.write(r.content)
-                time.sleep(random.random())
+                # time.sleep(random.random())
         else:
             print('error:',r.status_code)
             break
 
     # 输出，将所有片段按照从小到大顺序合并成一个文件
-    join(folder, "file6.ts")
+    join(folder, "file8.ts")
     
 
 
