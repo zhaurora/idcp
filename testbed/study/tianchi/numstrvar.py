@@ -7,6 +7,8 @@ if __name__ == '__main__':
     pass
 
 '''
+【Python入门】Python数据处理编程基础
+https://tianchi.aliyun.com/learn/liveDetail.html?spm=5176.11510288.0.0.76f2b7bd4SQN3W&classroomId=218
 第1章 Python的基本元素：数字，字符串和变量
 CHAPTER 1 Numbers, Strings,and Variables
 '''
