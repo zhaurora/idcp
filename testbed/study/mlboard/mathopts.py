@@ -2,6 +2,9 @@
 '''
 数学计算相关的方法
 '''
+import random
+import string
+
 
 def sortport(lis):
     '''
@@ -99,3 +102,180 @@ def multitable():
             print('%d x %d = %d \t'%(j, i, i*j), end='')
         print()
     return
+
+def replaceone(s, d, lis):
+    '''
+    把lis中的s字符（数字）替换为d字符
+    :param s: 原字符
+    :param d: 目标字符
+    :param lis: 原list
+    :return:  list[]
+    '''
+    result = lis
+    for i in range(lis.count(s)):
+        idx = lis.index(s)
+        result[idx] = d
+    return result
+
+def mergelist(list1, list2):
+    '''
+    利用set的特性合并list并去重
+    :param list1: list[]
+    :param list2: list[]
+    :return: list[]，合并去重无序
+    '''
+    result = list1 + list2
+    temp = set(result)
+    return list(temp)
+
+def CAPTCHA1(bitnum):
+    '''
+    生成bitnum位的验证码，09azAZ
+    :param bitnum: 验证码位数
+    :return: string
+    '''
+    temp = []
+    #遍历ascii的字符
+    for i in range(65,91):
+        temp.append(chr(i))
+    for j in range(97,123):
+        temp.append(chr(j))
+    for k in range(48,58):
+        temp.append(chr(k))
+    # 获取到的时list格式
+    result = random.sample(temp, bitnum)
+    # 转换为字符串格式
+    result = ''.join(result)
+    return result
+
+def CAPTCHA2(bitnum):
+    '''
+    生成bitnum位的验证码，09azAZ
+    :param bitnum: 验证码位数
+    :return: string
+    '''
+    str1 = "0123456789"
+    # 包含所有字母（大写和小写）的字符串
+    str2 = string.ascii_letters
+    str3 = str1+str2
+    result = random.sample(str3, bitnum)
+    result = ''.join(result)
+    return result
+
+def isNumber(s):
+    '''
+    判断字符串是否只有数字组成
+    :param s: 输入的字符串
+    :return: True / False
+    '''
+    try:
+        float(s)
+        return True
+    except ValueError:
+        pass
+
+    try:
+        import unicodedata
+        unicodedata.numeric(s)
+        return True
+    except (TypeError, ValueError):
+        pass
+
+    return False
+
+def isEvenNum(s):
+    '''
+    判断输入是否为偶数
+    :param s: 输入的字符
+    :return: True / False
+    '''
+    try:
+        num = int(s)
+    except ValueError:
+        return False
+
+    if num % 2 == 0:
+        return True
+
+    return False
+
+def isLeapYear1(year):
+    '''
+    判断闰年
+    :param year: 输入的年份
+    :return: True / False
+    '''
+    import calendar
+    return calendar.isleap(year)
+
+def isLeapYear2(year):
+    '''
+    判断闰年
+    :param year: 输入的年份
+    :return: True / False
+    '''
+    result = year%4 == 0 and year%100 != 0 or year%400 == 0
+    return result
+
+def Fibonacci(end):
+    '''
+    斐波那契数列：第0项是0，第1项是第一个1。从第三项开始，每一项都等于前两项之和。
+    :param end: 数列的总项数
+    :return: list
+    '''
+    n1 = 0
+    n2 = 1
+    count = 2
+    result =[]
+    result.append(n1)
+    result.append(n2)
+    while count < end and end > 2:
+        nth = n1 + n2
+        result.append(nth)
+        n1 = n2
+        n2 = nth
+        count += 1
+
+    return result
+
+def hcf(x, y):
+    '''
+    highest common factor 最大公约数
+    :param x: 数字1
+    :param y: 数字2
+    :return: 最大公约数
+    '''
+    result = ''
+    smaller = min(x, y)
+    for i in range(1, smaller+1):
+        if x%i==0 and y%i==0:
+            result = i
+
+    return result
+
+def lcm(x, y):
+    '''
+    Lowest Common Multiple 最小公倍数
+    :param x: 数字1
+    :param y: 数字2
+    :return: 最小公倍数
+    '''
+    result = ''
+    greater = max(x, y)
+    while True:
+        if greater%x==0 and greater%y==0:
+            result = greater
+            break
+        greater += 1
+
+    return result
+
+def getYestoday():
+    '''
+    获取昨天的日期
+    :return:
+    '''
+    import datetime as dt
+    today = dt.date.today()
+    oneday = dt.timedelta(days=1)
+    return today-oneday
