@@ -140,6 +140,34 @@ if __name__ == '__main__':
     # # 关闭
     # conn.close()
 
+    # # 遍历dict
+    # dict_of_lists = {}
+    # dict_of_lists['模型评估'] = 'https://13.cdn-vod.huaweicloud.com/asset/54a9a8824395b738959af87ab09096c1/play_video/35496d8c036b9d5514ae2243a5db2b18_1_1920X1080_3000_0_'
+    # dict_of_lists['机器学习助力客户分群（上）'] = 'https://13.cdn-vod.huaweicloud.com/asset/3cb5973fe4ec0e7f24dfa5f5f734dcb8/play_video/6694ebc4fdd642b83d5ed5a5ce3490f5_1_1280X720_1000_0_'
+    # dict_of_lists['机器学习助力客户分群（下）'] = 'https://13.cdn-vod.huaweicloud.com/asset/49ff970daba8b44883655836fdee7b63/play_video/921485b7b2c7381ed670347996a3c724_1_1280X688_500_0_'
+    # dict_of_lists['机器学习助力商品质量分类（上）'] = 'https://13.cdn-vod.huaweicloud.com/asset/11d07a7d98d37e7f621f0c0597b48cc5/play_video/156f7666a3143eacec32e7109ae62f94_1_1280X720_1000_0_'
+    # dict_of_lists['机器学习助力商品质量分类（下）'] = 'https://13.cdn-vod.huaweicloud.com/asset/7d83b1d81fb21a46586a54e4b9ff4c40/play_video/6069bb0f65488f4dc35a974888287413_1_1280X720_1000_0_'
+    # dict_of_lists['机器学习助力预测性维护（上）'] = 'https://13.cdn-vod.huaweicloud.com/asset/3df9a4b880e1989331c84cacd5419500/play_video/101a7050a9958bac4d97e2fe862cd0b0_1_1280X720_1000_0_'
+    # dict_of_lists['机器学习助力预测性维护（下）'] = 'https://13.cdn-vod.huaweicloud.com/asset/27237084abb1fc5dec3ce3e6ce11ec4d/play_video/f83150e577d76c21b87e88c8f0c225b4_1_1920X1080_3000_0_'
+    #
+    # for k,v in dict_of_lists.items():
+    #     print(u'正在处理页面：', k, ' ', v)
 
+    # def delfile(path):
+    #     '''
+    #     删除指定path下的所有文件和子文件
+    #     :param path:
+    #     :return:
+    #     '''
+    #     ls = os.listdir(path)
+    #     for i in ls:
+    #         c_path = os.path.join(path, i)
+    #         if os.path.isdir(c_path):
+    #             delfile(c_path)
+    #         else:
+    #             os.remove(c_path)
+    #             print(c_path)
+    # #
+    # delfile('./ttt/')
 
     print('test program is end.')
