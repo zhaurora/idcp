@@ -36,6 +36,40 @@ def getMicroServiceOnCloud():
     result['Springboot实践作业'] = 'https://13.cdn-vod.huaweicloud.com/asset/b51305b90ec35c2fe3225ffe03c58f4e/play_video/0a7c3bc391ca574dabab647e070f6505_1_1280X720_0_0_'
     return result
 
+def getCSE():
+    '''
+    《微服务引擎：敏捷开发微服务应用》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXP004+2018.5/courseware
+    :return:
+    '''
+    result ={}
+    result['使用CSE开发微服务'] = 'https://13.cdn-vod.huaweicloud.com/asset/69cd39d1173186a81cbd344d07c9e874/play_video/ce6e78dc0876e2efc860976008240dfe_1_1920X1080_3000_0_'
+    result['使用CSE进行微服务治理-负载均衡'] = 'https://13.cdn-vod.huaweicloud.com/asset/31f13a001993a41c2c7ba9f5883bb168/play_video/%E4%B8%AD%E6%96%87-PaaS-CSE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B9%8B%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['使用CSE进行微服务治理-限流'] = 'https://13.cdn-vod.huaweicloud.com/asset/ebbbe305ab034e3d49322a7f987cdbcc/play_video/%E4%B8%AD%E6%96%87-PaaS-CSE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B9%8B%E9%99%90%E6%B5%81-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['使用CSE进行微服务治理-降级'] = 'https://13.cdn-vod.huaweicloud.com/asset/b9c220835f2a4844bda1056d630d82fd/play_video/%E4%B8%AD%E6%96%87-PaaS-CSE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B9%8B%E9%99%8D%E7%BA%A7-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['使用CSE进行微服务治理-熔断'] = 'https://13.cdn-vod.huaweicloud.com/asset/be656ab5692eec61255d18a589609d7c/play_video/%E4%B8%AD%E6%96%87-PaaS-CSE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B9%8B%E7%86%94%E6%96%AD-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['使用CSE进行微服务治理-容错'] = 'https://13.cdn-vod.huaweicloud.com/asset/68c2d1d793cb440ebb4dc0b75f650001/play_video/%E4%B8%AD%E6%96%87-PaaS-CSE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E4%B9%8B%E5%AE%B9%E9%94%99-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['企业应用云化DevOps-微服务架构的兴起'] = 'https://13.cdn-vod.huaweicloud.com/asset/6f87f930e257ceab4990759b1f93921d/play_video/c0c68e94af98a777187734a6c0f9286a_1_1280X720_1000_0_'
+    result['企业应用云化DevOps-CSE微服务引擎'] = 'https://13.cdn-vod.huaweicloud.com/asset/8509bc203b31a6cf188dd4e1ede679c2/play_video/2a5f80c042c2bb724544843e9fdbbe69_1_1280X720_1000_0_'
+    result['企业应用云化DevOps-微服务全生命周期管理'] = 'https://13.cdn-vod.huaweicloud.com/asset/17842fc3c2398b5a9405237475849710/play_video/f7b3c5b50bd7856f68889fe3af8f38be_1_1920X1080_3000_0_'
+    return result
+
+def getAPM():
+    '''
+    《应用性能管理：速解分布式架构问题》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXP006+2018.5/courseware
+    :return:
+    '''
+    result ={}
+    result['APM快速入门'] = 'https://13.cdn-vod.huaweicloud.com/asset/db31b71ecd4c9e7ffe27d7b7ede69467/play_video/16939fe34ab72f8151742f379310a5ce_1_1920X1080_3000_0_'
+    result['APM管理操作-事务'] = 'https://13.cdn-vod.huaweicloud.com/asset/0050b2b8f7dfc47387d934faa7132637/play_video/%E4%B8%AD%E6%96%87-PaaS-APM%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E4%B9%8B%E4%BA%8B%E5%8A%A1-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['APM管理操作-拓扑'] = 'https://13.cdn-vod.huaweicloud.com/asset/bf708df40e28990e72273279e8b95b24/play_video/%E4%B8%AD%E6%96%87-PaaS-APM%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E4%B9%8B%E6%8B%93%E6%89%91-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['APM管理操作-调用链'] = 'https://13.cdn-vod.huaweicloud.com/asset/38ad0f39089d0fbf1d6101aab603e621/play_video/%E4%B8%AD%E6%96%87-PaaS-APM%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%B0%83%E7%94%A8%E9%93%BE-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['企业应用云化DevOps-云场景下运维挑战'] = 'https://13.cdn-vod.huaweicloud.com/asset/4a31277444f0950f0690d51edf69b8cd/play_video/%E4%B8%AD%E6%96%87-APM-%E4%BA%91%E5%9C%BA%E6%99%AF%E4%B8%8B%E8%BF%90%E7%BB%B4%E6%8C%91%E6%88%98-%E8%A7%86%E9%A2%91-V01-20180422_1_854X480_600_0_'
+    result['企业应用云化DevOps-华为APM解决方案'] = 'https://13.cdn-vod.huaweicloud.com/asset/2737696665e34773d5c02cf86150e565/play_video/%E4%B8%AD%E6%96%87-APM-%E5%8D%8E%E4%B8%BAAPM%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%86%E9%A2%91-V01-20180422_1_854X480_600_0_'
+    result['微服务运维能力实战'] = 'https://13.cdn-vod.huaweicloud.com/asset/f32599ae569fb4e17f20c24ea2a28cbf/play_video/a987229b8a4d15346a20d7c27b6052fb_1_1920X1080_3000_0_'
+    return result
+
 def join(fromdir, tofile):
     '''
     将指定的formdir下所有文件合并成tofile文件
@@ -98,7 +132,7 @@ def download(url, tofolder, tofile):
         if r.status_code is 200:
             with open(folder + link, "wb") as source:
                 source.write(r.content)
-                # time.sleep(random.random())
+                time.sleep(random.random())
         else:
             print('error:', r.status_code)
             break
@@ -122,7 +156,7 @@ if __name__ == '__main__':
    
     # 初始化
     folder = './folder/'
-    url_lists = getMicroServiceOnCloud()
+    url_lists = getAPM()
 
     # 检测临时目录是否存在，不存在就删除
     if not os.path.exists(folder):
