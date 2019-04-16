@@ -170,4 +170,12 @@ if __name__ == '__main__':
     # #
     # delfile('./ttt/')
 
+    url = 'https://bbs.huaweicloud.com/forum/thread-10102-1-1.html'
+    r = requests.get(url)
+    if r.status_code is 200:
+        str = r.content
+        print(str.decode('utf-8'))
+    else:
+        print('error:', r.status_code)
+
     print('test program is end.')

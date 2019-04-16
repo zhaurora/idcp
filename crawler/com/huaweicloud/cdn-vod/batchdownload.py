@@ -6,7 +6,7 @@ import random
 
 readsize = 1024
 
-def getmls():
+def getMLS():
     '''
     《7天晋级机器学习》课程
     https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXE026+Self-paced/about
@@ -68,6 +68,55 @@ def getAPM():
     result['企业应用云化DevOps-云场景下运维挑战'] = 'https://13.cdn-vod.huaweicloud.com/asset/4a31277444f0950f0690d51edf69b8cd/play_video/%E4%B8%AD%E6%96%87-APM-%E4%BA%91%E5%9C%BA%E6%99%AF%E4%B8%8B%E8%BF%90%E7%BB%B4%E6%8C%91%E6%88%98-%E8%A7%86%E9%A2%91-V01-20180422_1_854X480_600_0_'
     result['企业应用云化DevOps-华为APM解决方案'] = 'https://13.cdn-vod.huaweicloud.com/asset/2737696665e34773d5c02cf86150e565/play_video/%E4%B8%AD%E6%96%87-APM-%E5%8D%8E%E4%B8%BAAPM%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%86%E9%A2%91-V01-20180422_1_854X480_600_0_'
     result['微服务运维能力实战'] = 'https://13.cdn-vod.huaweicloud.com/asset/f32599ae569fb4e17f20c24ea2a28cbf/play_video/a987229b8a4d15346a20d7c27b6052fb_1_1920X1080_3000_0_'
+    return result
+
+def getPaaS():
+    '''
+    《PaaS整体解决方案概览》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXP001+2018.5/courseware/
+    :return:
+    '''
+    result = {}
+    result['1.1什么是PaaS'] = 'https://13.cdn-vod.huaweicloud.com/asset/1620d1a650d27541f585eff474fb041e/play_video/a15e6e4d8a0e69226afd51ea9614c8e3_1_1920X1080_3000_0_'
+    result['1.2业界PaaS的发展趋势'] = 'https://13.cdn-vod.huaweicloud.com/asset/d12f3613eb3296d8ed00725c96ebcfb9/play_video/%E4%B8%AD%E6%96%87-PaaS-%E4%B8%9A%E7%95%8CPaaS%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['2.1什么是华为云PaaS服务'] = 'https://13.cdn-vod.huaweicloud.com/asset/20d225a84c078f07ef2b0ae1c8e5f3a9/play_video/%E4%B8%AD%E6%96%87-PaaS-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8E%E4%B8%BA%E4%BA%91PaaS%E6%9C%8D%E5%8A%A1-%E8%A7%86%E9%A2%91-V01-20180413_1_854X480_600_0_'
+    result['2.2华为云PaaS服务能力介绍'] = 'https://13.cdn-vod.huaweicloud.com/asset/c0557ff16d16140f6ddafaa3c4900be7/play_video/374d312548eff09b9a2affaabe329cd7_1_1908X1028_1000_0_'
+    result['3.1全栈云原生应用开发与管理'] = 'https://13.cdn-vod.huaweicloud.com/asset/00e21f9036f5ee187735e70093bb0d90/play_video/6c71c34e6d0f6f3f85c1adc717e0ce56_1_1908X1028_1000_0_'
+    result['3.2智能边缘平台'] = 'https://13.cdn-vod.huaweicloud.com/asset/e062d34cab00aecdf87a96d9f6953f9f/play_video/c49195bde9f7a759d75c6b3e612e1b0f_1_1908X1028_1000_0_'
+    result['3.3企业集成平台'] = 'https://13.cdn-vod.huaweicloud.com/asset/92e3fe931a891174e74b5597f413d447/play_video/741417e5196ec9217b73175e780bfeff_1_1908X1028_1000_0_'
+    result['3.4区块链解决方案'] = 'https://13.cdn-vod.huaweicloud.com/asset/5367a645339cabb8192b1c3b272a6200/play_video/c89936137c04cc34fee00170081fc303_1_1908X1028_1000_0_'
+    return result
+
+def getServiceStage():
+    '''
+    《由浅入深探索微服务云应用平台》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXP002+2018.5/courseware/
+    :return:
+    '''
+    result = {}
+    result['1.1ServiceStage概述'] = 'https://13.cdn-vod.huaweicloud.com/asset/f6bde33326fffa2313b3c173e3c42b8c/play_video/2a878e764afcaecbed72acbe33fbc73b_1_1920X1080_3000_0_'
+    result['1.2如何在ServiceStage上部署容器应用-创建集群'] = 'https://13.cdn-vod.huaweicloud.com/asset/40c688ae49305102fe06abed3c266501/play_video/%E4%B8%AD%E6%96%87-PaaS-%E5%88%9B%E5%BB%BA%E9%9B%86%E7%BE%A4-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.2如何在ServiceStage上部署容器应用-制作镜像'] = 'https://13.cdn-vod.huaweicloud.com/asset/a7ae4aad01eb44753cdf9a4deae8a5a2/play_video/%E4%B8%AD%E6%96%87-PaaS-%E5%88%B6%E4%BD%9C%E9%95%9C%E5%83%8F-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.2如何在ServiceStage上部署容器应用-上传镜像'] = 'https://13.cdn-vod.huaweicloud.com/asset/ae985721d7b29851f633fabd83ae72d6/play_video/%E4%B8%AD%E6%96%87-PaaS-%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.2如何在ServiceStage上部署容器应用-部署容器应用'] = 'https://13.cdn-vod.huaweicloud.com/asset/e065b33b0055b0699676e479ad5e18bc/play_video/%E4%B8%AD%E6%96%87-PaaS-%E9%83%A8%E7%BD%B2%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.3使用ServiceStage开发微服务'] = 'https://13.cdn-vod.huaweicloud.com/asset/2c23b701b43bb4cfb1d1d43bbb7425fc/play_video/%E4%B8%AD%E6%96%87-PaaS-%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.4ServiceStage的编排部署功能'] = 'https://13.cdn-vod.huaweicloud.com/asset/5ae629119be7869aaff65623be622b1c/play_video/%E4%B8%AD%E6%96%87-PaaS-%E7%BC%96%E6%8E%92%E9%83%A8%E7%BD%B2%E5%A4%8D%E6%9D%82%E5%BA%94%E7%94%A8-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-负载均衡'] = 'https://13.cdn-vod.huaweicloud.com/asset/122bc365387cdf4649c8eb935fdb7cce/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-容错'] = 'https://13.cdn-vod.huaweicloud.com/asset/501b714f4e12185b8a8f0aee65cb6e43/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E5%AE%B9%E9%94%99-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-熔断'] = 'https://13.cdn-vod.huaweicloud.com/asset/bae3ae67fff741083fc176f7d77383b2/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E7%86%94%E6%96%AD-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-降级'] = 'https://13.cdn-vod.huaweicloud.com/asset/8d1726f663a6113f15383cf02349151d/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E9%99%8D%E7%BA%A7-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-限流'] = 'https://13.cdn-vod.huaweicloud.com/asset/65cc1edef00ea2cae1bb67ad4fd70b2e/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E9%99%90%E6%B5%81-%E8%A7%86%E9%A2%91-V01-20180409_1_854X480_600_0_'
+    result['1.5ServiceStage的治理功能-灰度发布'] = 'https://13.cdn-vod.huaweicloud.com/asset/a60a9409c126e4754f5f27d5b95e451f/play_video/%E4%B8%AD%E6%96%87-PaaS-ServiceStage%E7%81%B0%E5%BA%A6%E5%8F%91%E5%B8%83-%E8%A7%86%E9%A2%91-V01-20180409_1_480X270_300_0_'
+    result['2.1ServiceStage产品介绍'] = 'https://13.cdn-vod.huaweicloud.com/asset/4c03680ac54d618c375cdfacbfb170e1/play_video/2beeb417e376ed7b2125634553ced97b_1_1920X1080_3000_0_'
+    return result
+
+def getIOT():
+    '''
+    《物联网技术与应用》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXT001+Self-paced/courseware/27e12beb190541618c0b399f871369d0/a0c1f6489ad9426cb1be49a45b5fdbb5/
+    :return:
+    '''
+    result = {}
     return result
 
 def join(fromdir, tofile):
@@ -156,7 +205,7 @@ if __name__ == '__main__':
    
     # 初始化
     folder = './folder/'
-    url_lists = getAPM()
+    url_lists = getServiceStage()
 
     # 检测临时目录是否存在，不存在就删除
     if not os.path.exists(folder):
