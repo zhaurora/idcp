@@ -119,6 +119,16 @@ def getIOT():
     result = {}
     return result
 
+def getDWS():
+    '''
+    《数据仓库（DWS）》课程
+    https://education.huaweicloud.com:8443/courses/course-v1:HuaweiX+CBUCNXE035+Self-paced/courseware/a02ff9447ae9474c93cd78ee2e393cc0/35ddbc0786174f28a5b5272838bf07c0/
+    :return:
+    '''
+    result = {}
+    result['认识华为云DWS（上）'] = 'https://13.cdn-vod.huaweicloud.com/asset/a641f6b1b7f6feb140a43f419630f45b/play_video/b000862409a133fe2cdc877fd10a1be4_1_1920X1080_3000_0_'
+    return result
+
 def join(fromdir, tofile):
     '''
     将指定的formdir下所有文件合并成tofile文件
@@ -205,7 +215,7 @@ if __name__ == '__main__':
    
     # 初始化
     folder = './folder/'
-    url_lists = getServiceStage()
+    url_lists = getDWS()
 
     # 检测临时目录是否存在，不存在就删除
     if not os.path.exists(folder):
